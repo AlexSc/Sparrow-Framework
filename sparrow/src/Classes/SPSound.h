@@ -68,5 +68,6 @@
 
 /// The duration of the sound in seconds.
 @property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) int numCurrentChannels;
 
 @end

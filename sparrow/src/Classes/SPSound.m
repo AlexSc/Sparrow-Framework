@@ -198,4 +198,9 @@
     [super dealloc];
 }
 
+- (int)numCurrentChannels
+{
+   return [mPlayingChannels count];
+}
+
 @end
