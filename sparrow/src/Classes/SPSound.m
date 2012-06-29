@@ -158,6 +158,8 @@
 - (void)play
 {
     SPSoundChannel *channel = [self createChannel];
+    if (!channel)
+       return;
     [channel addEventListener:@selector(onSoundCompleted:) atObject:self
                       forType:SP_EVENT_TYPE_SOUND_COMPLETED];
     [channel play];
