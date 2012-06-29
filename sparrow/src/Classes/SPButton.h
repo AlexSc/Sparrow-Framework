@@ -17,6 +17,7 @@
 @class SPTextField;
 @class SPSprite;
 
+#define SP_EVENT_TYPE_PRESSED @"pressed"
 #define SP_EVENT_TYPE_TRIGGERED @"triggered"
 
 /** ------------------------------------------------------------------------------------------------

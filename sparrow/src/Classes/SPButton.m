@@ -95,6 +95,7 @@
         mContents.x = (1.0f - mScaleWhenDown) / 2.0f * mBackground.width;
         mContents.y = (1.0f - mScaleWhenDown) / 2.0f * mBackground.height;
         mIsDown = YES;
+        [self dispatchEvent:[SPEvent eventWithType:SP_EVENT_TYPE_PRESSED]];
     }
     else if (touch.phase == SPTouchPhaseMoved && mIsDown)
     {
