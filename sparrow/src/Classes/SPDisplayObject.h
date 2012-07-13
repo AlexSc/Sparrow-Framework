@@ -77,7 +77,6 @@
 
 @interface SPDisplayObject : SPEventDispatcher 
 {
-  @private
     float mX;
     float mY;
     float mPivotX;
