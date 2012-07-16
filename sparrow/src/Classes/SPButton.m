@@ -255,6 +255,7 @@
     // the textfield is not stretched, but will have more room for its chars.
     
     mBackground.width = width;
+    mTextBounds.width = width;
     [self createTextField];
 }
 
@@ -265,7 +266,8 @@
 
 - (void)setHeight:(float)height
 {
-    mBackground.height = height;    
+    mBackground.height = height;
+    mTextBounds.height = height;
     [self createTextField];
 }
 
